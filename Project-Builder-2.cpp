@@ -22,8 +22,8 @@ class B
 		}
 		void getdata(int id,char name[])
 		{
-			cout<<"ID   ->"<<n1<<endl;
-			cout<<"Name ->"<<n2<<endl;
+			cout<<"ID   ->"<<id<<endl;
+			cout<<"Name ->"<<name<<endl;
 	    }
 	};
 };
@@ -35,4 +35,3 @@ main()
 	cout<<"___________________________________"<<endl;
 	a.getdata();
 }
-
