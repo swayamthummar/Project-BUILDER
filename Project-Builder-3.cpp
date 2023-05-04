@@ -1,77 +1,134 @@
 #include<iostream>
 #include<string.h>
 using namespace std;
-class HOTEL
-{
-	private:
-		int id;
-		char name[100];
-		char type[50];
-		int staffs;
-		char rooms[30];
-		int establish_year;
-		char add[100];
-		char rating[10];
-		char website[100];
-		
-	public:
-		void datain()
-		{
-			this->id=id;
-			this->name[100]=name[100];
-			this->type[50]=type[50];
-			this->staffs=staffs;
-			this->rooms[30]=rooms[30];
-			this->establish_year=establish_year;
-			this->add[100]=add[100];
-			this->rating[10]=rating[10];
-			this->website[100]=website[100];
-			
-			cout<<"Enter the ID of Hotel->";
-			cin>>id;
-			cout<<endl;
-			cout<<"Enter the Name of Hotel->";
-			cin>>name;
-			cout<<endl;
-			cout<<"Enter the Type of Hotel->";
-			cin>>type;
-			cout<<endl;
-			cout<<"Enter the Staf Size of Hotel->";
-			cin>>staffs;
-			cout<<endl;
-			cout<<"Enter the Room Size of Hotel->";
-			cin>>rooms;
-			cout<<endl;
-			cout<<"Enter the Establish Year of Hotel->";
-			cin>>establish_year;
-			cout<<endl;
-			cout<<"Enter the Address of Hotel->";
-			cin>>add;
-			cout<<endl;
-			cout<<"Enter the Rating of Hotel->";
-			cin>>rating;
-			cout<<endl;
-			cout<<"Enter the Website of Hotel->";
-			cin>>website;
-			cout<<endl;
-			cout<<"--------------------------------------------------"<<endl<<endl;
-			dataout();
-		}
-		void dataout()
-		{
-			cout<<"ID->"<<id<<endl<<endl;
-			cout<<"Name->"<<name<<endl<<endl;
-			cout<<"Type->"<<type<<endl<<endl;
-			cout<<"Staff Size->"<<staffs<<endl<<endl;
-			cout<<"Room Size->"<<rooms<<endl<<endl;
-			cout<<"Establish Year->"<<establish_year<<endl<<endl;
-			cout<<"Address->"<<add<<endl<<endl;
-			cout<<"Rating->"<<rating<<endl<<endl;
-			cout<<"Website->"<<website<<endl<<endl;
-		}
+
+class school
+{ 
+public:
+	int student_id;
+	char student_name[100];
+	int student_roll;
+	int student_standard;
+	int student_age;
+	char student_contact[12];
+  static char student_school_name[100];
+	char student_address[100];
+	
+//void school_students_in()
+//{
+//   	cout<<"Enter School Student ID->";
+//   	cin>>student_id;
+//   	cout<<"Enter School Student Name->";
+//   	cin>>student_name;
+//   	cout<<"Enter School Student Roll Number->";
+//   	cin>>student_roll;
+//   	cout<<"Enter School Student Standard->";
+//   	cin>>student_standard;
+//   	cout<<"Enter School Student AGE->";
+//   	cin>>student_age;
+//   	cout<<"Enter School Student Contact->";
+//   	cin>>student_contact;
+//   	cout<<"Enter School Student Address->";
+//   	cin>>student_address;
+//   	cout<<endl;
+//   	school_students_out();
+//}
+//
+//void school_students_out()
+//{
+//	cout<<"ID->"<<student_id<<endl;
+//	cout<<"Name->"<<student_name<<endl;
+//	cout<<"Roll Number->"<<student_roll<<endl;
+//	cout<<"Standard->"<<student_standard<<endl;
+//	cout<<"AGE->"<<student_age<<endl;
+//	cout<<"Contact Details->"<<student_contact<<endl;
+//	cout<<"Address->"<<student_address<<endl;
+//}
 };
+class collage
+{
+    public:
+	int student_id;
+	char student_name[100];
+	int student_roll;
+	char student_standard[10];
+	int student_age;
+	char student_contact[12];
+static char student_collage_name[100];
+	char student_address[100];
+	
+//void collage_student_in()
+//{
+//   	cout<<"Enter Collage Student ID->";
+//   	cin>>student_id;
+//   	cout<<"Enter Collage Student Name->";
+//   	cin>>student_name;
+//   	cout<<"Enter Collage Student Roll Number->";
+//   	cin>>student_roll;
+//   	cout<<"Enter Collage Student Standard->";
+//   	cin>>student_standard;
+//   	cout<<"Enter Collage Student AGE->";
+//   	cin>>student_age;
+//   	cout<<"Enter Collage Student Contact->";
+//   	cin>>student_contact;
+//   	cout<<"Enter Collage Student Address->";
+//   	cin>>student_address;
+//   	cout<<endl;
+//   	collage_students_out();
+//}
+//void collage_student_out()
+//{
+//    cout<<"ID->"<<student_id<<endl;
+//	cout<<"Name->"<<student_name<<endl;
+//	cout<<"Roll Number->"<<student_roll<<endl;
+//	cout<<"Standard->"<<student_standard<<endl;
+//	cout<<"AGE->"<<student_age<<endl;
+//	cout<<"Contact Details->"<<student_contact<<endl;
+//	cout<<"Address->"<<student_address<<endl;	
+//}		
+};
+char school::student_school_name[]="RED & WHITE";
+char collage::student_collage_name[]="Red & White Multimedia Institute";
+
 main()
 {
-	HOTEL H;
-	H.datain();
+  school s1;
+  collage c1;
+  
+  s1.student_id=12301;
+  strcpy(s1.student_name,"Swayam Thummar");
+  s1.student_roll=1;
+  s1.student_standard=9;
+  s1.student_age=14;
+  strcpy(s1.student_contact,"1234567890");
+  strcpy(s1.student_address,"Sarthana Jakatnaka"); 
+  
+    cout<<school::student_school_name<<endl;
+    cout<<"ID->"<<s1.student_id<<endl;
+	cout<<"Name->"<<s1.student_name<<endl;
+	cout<<"Roll Number->"<<s1.student_roll<<endl;
+	cout<<"Standard->"<<s1.student_standard<<endl;
+	cout<<"AGE->"<<s1.student_age<<endl;
+	cout<<"Contact Details->"<<s1.student_contact<<endl;
+	cout<<"Address->"<<s1.student_address<<endl;
+	
+	cout<<"________________________________________________________________________"<<endl;
+		
+		c1.student_id=32101;
+		strcpy(c1.student_name,"Swayam Thummar");
+		c1.student_roll=1;
+		strcpy(c1.student_standard,"3rd year");
+		c1.student_age=21;
+		strcpy(c1.student_contact,"0987654321");
+		strcpy(c1.student_address,"Sarthana Jakatnaka");
+		
+		cout<<collage::student_collage_name<<endl;
+	    cout<<"ID->"<<c1.student_id<<endl;
+    	cout<<"Name->"<<c1.student_name<<endl;
+     	cout<<"Roll Number->"<<c1.student_roll<<endl;
+	    cout<<"Standard->"<<c1.student_standard<<endl;
+	    cout<<"AGE->"<<c1.student_age<<endl;
+	    cout<<"Contact Details->"<<c1.student_contact<<endl;
+	    cout<<"Address->"<<c1.student_address<<endl;
+
 }
